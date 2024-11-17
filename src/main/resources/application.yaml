@@ -1,0 +1,29 @@
+spring:
+  mail:
+    host: mail.vistager.com
+    port: 465
+    username: data_is_injected
+    password: data_is_injected
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          ssl:
+            enable: true
+  application:
+    name: mail-service
+  datasource:
+    password: 12345
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/start-up
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+server:
+  port: 8083
+
+domain:
+  frontend: https://www.vistager.com
